@@ -1,5 +1,5 @@
 # djano-docker
-A simple docker setup for Djano.
+A simple docker setup for Djano ( that works )
 # note below command will do the build also
 sudo docker compose run web django-admin startproject composeexample .
 
