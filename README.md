@@ -1,6 +1,6 @@
 # djano-docker
 A simple docker setup for Djano ( that works )
-# note below command will do the build also
+# note below command will do the build also. for windows leave out the 'sudo' bit
 sudo docker compose run web django-admin startproject composeexample .
 
 # list the contents
@@ -9,7 +9,7 @@ $ ls -l
 # If you are running Docker on Linux, the files django-admin created are owned by root. This happens because the container runs as the root user.
 # Change the ownership of the new files.
 
-sudo chown -R $USER:$USER composeexample manage.py
+sudo chown -R $USER:$USER composeexample manage.py 
 
 # Do not change the permission of the data folder where Postgres has its file, otherwise Postgres will not be able to start due to permission issues.
 
