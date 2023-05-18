@@ -36,3 +36,6 @@ DATABASES = {
 docker compose run web python3 manage.py makemigrations
 
 docker compose run web python3 manage.py migrate
+
+# Get it up and running
+docker compose up
